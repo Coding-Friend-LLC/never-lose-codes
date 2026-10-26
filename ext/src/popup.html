@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Never Lose Codes</title>
+<link rel="stylesheet" href="ui.css">
+<style>
+  body { width: 360px; }
+  header { display: flex; align-items: center; gap: 10px; padding: 12px 14px 8px; }
+  header img { width: 24px; height: 24px; }
+  header h1 { font-size: 15px; margin: 0; white-space: nowrap; }
+  .searchbox { margin: 0 14px 8px; }
+  .searchbox input { width: 100%; height: 34px; border: 1px solid var(--border); border-radius: 8px; padding: 0 10px; background: var(--surface); }
+  #list { max-height: 420px; overflow: auto; padding: 0 8px 8px; display: grid; gap: 4px; }
+  .acct { display: flex; align-items: center; gap: 10px; padding: 10px; border-radius: 10px; cursor: pointer; border: 1px solid transparent; background: none; text-align: left; width: 100%; }
+  .acct:hover, .acct:focus-visible { background: var(--surface-2); }
+  .acct .who { min-width: 0; flex: 1; }
+  .acct .iss { font-weight: 650; }
+  .acct .code { font: 700 22px/1.1 ui-monospace, "SF Mono", Menlo, Consolas, monospace; letter-spacing: .04em; font-variant-numeric: tabular-nums; color: var(--brand); }
+  .ring { width: 22px; height: 22px; flex: none; }
+  .ring circle { fill: none; stroke-width: 3; }
+  .ring .bg { stroke: var(--border); } .ring .fg { stroke: var(--brand); stroke-linecap: round; transform: rotate(-90deg); transform-origin: 50% 50%; }
+  .ring.low .fg { stroke: var(--warn); }
+  footer { display: flex; justify-content: space-between; padding: 8px 14px 12px; border-top: 1px solid var(--border); }
+  .center { padding: 22px 16px; display: grid; gap: 10px; text-align: center; justify-items: center; }
+  .center input { width: 100%; height: 36px; border: 1px solid var(--border); border-radius: 8px; padding: 0 10px; background: var(--surface); }
+</style>
+</head>
+<body>
+<header><img src="../icons/48.png" alt=""><h1 class="grow">Never Lose Codes</h1><span id="status" class="pill wait"><span class="dot"></span><span>…</span></span></header>
+<div id="body"></div>
+<footer><button id="open" class="btn ghost">Open full view →</button><button id="add" class="btn ghost">+ Add account</button></footer>
+<script src="../vendor/jsQR.js"></script>
+<script type="module" src="popup.js"></script>
+</body>
+</html>

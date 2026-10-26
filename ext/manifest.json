@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Never Lose Codes: 2FA Authenticator with Encrypted Backup",
+  "short_name": "Never Lose Codes",
+  "version": "1.0.1",
+  "description": "Two-factor codes in your browser, encrypted, with backups you hold and a recovery key, so you never get locked out.",
+  "minimum_chrome_version": "121",
+  "background": { "service_worker": "src/background.js", "type": "module" },
+  "action": { "default_popup": "src/popup.html", "default_title": "Never Lose Codes" },
+  "options_page": "src/manager.html",
+  "permissions": ["storage", "unlimitedStorage", "alarms", "downloads", "downloads.ui"],
+  "content_security_policy": { "extension_pages": "script-src 'self'; object-src 'self'" },
+  "icons": { "16": "icons/16.png", "32": "icons/32.png", "48": "icons/48.png", "128": "icons/128.png" }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "neverlosecodes",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "devDependencies": {
+    "fake-indexeddb": "6.0.0",
+    "puppeteer-core": "^23.11.1",
+    "qrcode": "^1.5.4"
+  }
+}

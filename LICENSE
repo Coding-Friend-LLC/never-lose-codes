@@ -1,0 +1,27 @@
+Never Lose Codes
+Copyright (c) 2026 Coding Friend LLC. All rights reserved.
+
+The source code in this repository is published so that anyone can read it,
+audit it, and verify that it matches the extension in the Chrome Web Store.
+
+You MAY:
+  - read, review and security-test this code;
+  - build and run it on your own computers to check how it works;
+  - publish findings about it, including security reports and short excerpts
+    needed to explain them.
+
+You MAY NOT, without written permission from Coding Friend LLC:
+  - publish, distribute or sell this code, or any modified version of it,
+    as an extension, app or other product;
+  - remove or bypass the license check in order to distribute the paid features.
+
+The files in ext/vendor/ are third-party code under their own licenses
+(Apache-2.0 for jsQR, MIT for qrcode-generator); see the license files there.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY ARISING FROM THE USE OF THE SOFTWARE.
+
+Questions or permission requests: support@codingfriendllc.com
